@@ -3,6 +3,7 @@ const moles = document.querySelectorAll(".mole");
 const startButton = document.querySelector(".button");
 const textScore = document.querySelector(".score");
 
+
 let isPlaying = true;
 let lastHole;
 let score = 0;
@@ -23,7 +24,7 @@ function randomHole(holes) {
 
 function popUp() {
     const hole = randomHole(holes);
-    const time = randomTime(1000,1000);
+    const time = randomTime(500,1000);
     hole.classList.add("up");
     setTimeout(() => {
         hole.classList.remove("up")
@@ -35,10 +36,13 @@ function popUp() {
 
 function bash(e) {
     if(!e.isTrusted) return;
-    this.classList.add("splat");
-    this.parentNode.classList.remove('up'); 
+    //this.classList.add("splat");
+    this.parentNode.classList.remove('up');
     score ++
     textScore.textContent = score;
+    const splatNode = document.createElement("div");
+    splatNode.classList.add("splat")
+    this.parentNode.appendChild(splatNode);
 }
 
 function startGame() {
@@ -50,7 +54,12 @@ function startGame() {
 }
 
 function removeSplat(e) {
-    this.classList.remove("splat");
+    //this.classList.remove("splat");
+    splatNode = this.parentNode.querySelector(".splat");
+    console.log(splatNode);
+    if(splatNode) {
+        this.parentNode.removeChild(splatNode);
+    }
 }
 
 moles.forEach(mole => mole.addEventListener('click', bash));
