@@ -8,6 +8,15 @@
     box-sizing:inherit;
 }
 
+body {
+    background-color: skyblue;
+}
+
+p {
+    font-size: 3em;
+    text-align: center;
+}
+
 h1 {
     font-size: 4em;
     
@@ -28,7 +37,8 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: skyblue;
+    width: 800px;
+    margin: 0 auto;
 }
 
 .game {
@@ -60,7 +70,6 @@ h2 {
 
 .mole {
     position: absolute;
-    background:  url(/whakamole/images/nick.svg) bottom center no-repeat;
     width: 100%;
     height: 100%;
     background-size: 100%;
@@ -73,8 +82,38 @@ h2 {
 }
 
 .splat {
+    position: absolute;
+    z-index:10;
     width: 100%;
     height: 100%;
     background:  url(/whakamole/images/splat.png) bottom center no-repeat;
     background-size: contain;
+}
+
+.img-nick {
+    background:  url(/whakamole/images/nick3.svg) bottom center no-repeat;
+}
+
+.img-claire {
+    background:  url(/whakamole/images/claire.svg) bottom center no-repeat;
+}
+
+.img-etienne {
+    background:  url(/whakamole/images/nick.svg) bottom center no-repeat;
+}
+
+.img-mike {
+    background:  url(/whakamole/images/mike.svg) bottom center no-repeat;
+}
+
+.img-mole {
+    background:  url(/whakamole/images/mole5.svg) bottom center no-repeat;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.appear {
+    
 }
