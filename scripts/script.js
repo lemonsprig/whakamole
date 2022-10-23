@@ -3,7 +3,7 @@ const moles = document.querySelectorAll(".mole");
 const startButton = document.querySelector(".button");
 const textScore = document.querySelector(".score");
 const message = document.querySelector(".message");
-const imageClass = ["img-etienne", "img-mole", "img-mole", "img-claire", "img-mole", "img-mole", "img-nick", "img-mole", "img-mole", "img-mike" ];
+const imageClass = ["etienne", "mole", "mole", "claire", "mole", "mole", "nick", "mole", "mole", "mike" ];
 
 
 let isPlaying = true;
@@ -74,9 +74,9 @@ function displayMessage() {
     if(score == 0) {
         message.textContent = "Wow! you didn't whack any pests. Call us now and let us transform your IT security." 
     } else if(score >0 && score <= 5) {
-        message.textContent = "Not bad, you got some pests, but there are many more. Speak to us know and let us help transform your IT security" 
+        message.textContent = "Not bad, you got some pests, but there are many more. Speak to us now and let us help transform your IT security" 
     } else if(score >5 && score <=10 ) {
-        message.textContent = "You are giving the pests a good whacking,  but its hard work. Flow Transform can help make it easier"        
+        message.textContent = "You are giving the pests a good whacking, but its hard work. Flow Transform can help make it easier"        
     } else if(score > 10) {
         message.textContent = "Looks like you have all the visible pests under control..... but what about the hidden? get in touch and see how we can help"        
     }
