@@ -10,7 +10,7 @@
 
 body {
     height: 100vh;
-    background-color: skyblue;
+    background: linear-gradient(to bottom, #83a4d4, #b6fbff);
 }
 
 p {
@@ -50,7 +50,7 @@ h2 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: skyblue;
+    /* background-color: skyblue; */
     }
 
 .hole {
