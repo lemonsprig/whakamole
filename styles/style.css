@@ -62,7 +62,7 @@ h2 {
 
 .hole:after {
     display: block;
-    background:  url(/whakamole/images/dirt.svg) bottom center no-repeat;
+    background:  url(/whakapest/images/dirt.svg) bottom center no-repeat;
     background-size: contain;
     width: 100%;
     height: 70px;
@@ -80,7 +80,7 @@ h2 {
     background-size: 100%;
     top: 100%;
     transition: top 0.5s;
-    background:  url(/whakamole/images/mole5.svg) bottom center no-repeat;
+    background:  url(/whakapest/images/mole5.svg) bottom center no-repeat;
 }
 
 .nick {
@@ -90,7 +90,7 @@ h2 {
     background-size: 100%;
     top: 100%;
     transition: top 0.5s;
-    background:  url(/whakamole/images/nick3.svg) bottom center no-repeat;
+    background:  url(/whakapest/images/nick3.svg) bottom center no-repeat;
 }
 
 .claire {
@@ -100,7 +100,7 @@ h2 {
     background-size: 100%;
     top: 100%;
     transition: top 0.5s;
-    background:  url(/whakamole/images/claire.svg) bottom center no-repeat;
+    background:  url(/whakapest/images/claire.svg) bottom center no-repeat;
 }
 
 .mike {
