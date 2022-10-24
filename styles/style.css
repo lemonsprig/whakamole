@@ -9,6 +9,7 @@
 }
 
 body {
+    height: 100vh;
     background-color: skyblue;
 }
 
@@ -23,7 +24,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .button {
@@ -32,25 +33,29 @@ h2 {
 }
 
 .container {
-    height: 100vh;
+    height: 100%;
     display: flex;
+    max-width: 800px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 800px;
     margin: 0 auto;
 }
 
 .game {
     display: flex;
-    width: 600px;
-    height: 600px;
+    width: 75%;
+    /* height: 75%; */
     flex-wrap: wrap;
-    background:  url() bottom center no-repeat;
+    align-items: center;
+    justify-content: center;
+    background-color: skyblue;
     }
 
 .hole {
-    flex: 0 33.33%;
+    /* flex: 1 1 33.33%; */
+    width: 33.33%;
+    padding-bottom: 33.33%;
     overflow: hidden;
     position: relative;
 }
@@ -108,6 +113,16 @@ h2 {
     background:  url(/whakamole/images/mike.svg) bottom center no-repeat;
 }
 
+.etienne {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    top: 100%;
+    transition: top 0.5s;
+    background:  url(/whakamole/images/etienne.svg) bottom center no-repeat;
+}
+
 .hole.up .mole {
     top: 0;
 }
@@ -127,5 +142,12 @@ h2 {
 }
 
 .message {
-    margin-top: 1em;
+    margin-top: 2rem;
+    font-size: 2rem;
 }
+
+@media (orientation: landscape) {
+    .container {
+      width: 55%;
+    }
+  }
