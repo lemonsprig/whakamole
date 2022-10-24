@@ -110,7 +110,7 @@ h2 {
     background-size: 100%;
     top: 100%;
     transition: top 0.5s;
-    background:  url(/whakamole/images/mike.svg) bottom center no-repeat;
+    background:  url(/whakapest/images/mike.svg) bottom center no-repeat;
 }
 
 .etienne {
@@ -120,7 +120,7 @@ h2 {
     background-size: 100%;
     top: 100%;
     transition: top 0.5s;
-    background:  url(/whakamole/images/etienne.svg) bottom center no-repeat;
+    background:  url(/whakapest/images/etienne.svg) bottom center no-repeat;
 }
 
 .hole.up .mole {
@@ -132,7 +132,7 @@ h2 {
     z-index:10;
     width: 100%;
     height: 100%;
-    background:  url(/whakamole/images/splat.png) bottom center no-repeat;
+    background:  url(/whakapest/images/splat.png) bottom center no-repeat;
     background-size: contain;
 }
 
