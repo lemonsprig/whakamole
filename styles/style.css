@@ -153,6 +153,6 @@ h2 {
 
 @media screen and (max-width: 1600px)  {
     .container {
-        width: 55%;
+        max-width: 500px;
     }
 }
