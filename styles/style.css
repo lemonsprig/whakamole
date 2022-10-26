@@ -150,7 +150,7 @@ h2 {
     }
   } 
 
-@media screen and (max-device-width: 1920px)  {
+@media screen and (max-width: 1000px)  {
     .container {
         width: 55%;
     }
