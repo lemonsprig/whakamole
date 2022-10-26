@@ -15,8 +15,7 @@ p {
 
 h1 {
     font-size: 3.5rem;
-    margin-top: 0;
-    color: red;
+    margin-top: 1rem;
     font-family: 'Marko One', serif;
     
 }
@@ -33,9 +32,9 @@ h2 {
 .container {
     height: 100%;
     display: flex;
-    max-width: 800px;
+    max-width: 600px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     margin: 0 auto;
 }
