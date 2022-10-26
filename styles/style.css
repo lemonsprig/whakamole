@@ -144,8 +144,14 @@ h2 {
     font-size: 2rem;
 }
 
-/* @media (orientation: landscape) {
+@media (orientation: landscape) {
     .container {
       width: 55%;
     }
-  } */
+  } 
+
+@media screen and (max-device-width: 1920px)  {
+    .container {
+        width: 55%;
+    }
+}
