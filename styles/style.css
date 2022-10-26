@@ -8,8 +8,12 @@
     box-sizing:inherit;
 }
 
+html {
+    height: 100%;
+}
+
 body {
-    height: 100vh;
+    /* height: 100vh; */
     background: linear-gradient(to bottom, #83a4d4, #b6fbff);
 }
 
@@ -46,11 +50,9 @@ h2 {
 .game {
     display: flex;
     width: 75%;
-    /* height: 75%; */
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /* background-color: skyblue; */
     }
 
 .hole {
@@ -147,8 +149,8 @@ h2 {
     font-size: 2rem;
 }
 
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
     .container {
       width: 55%;
     }
-  }
+  } */
